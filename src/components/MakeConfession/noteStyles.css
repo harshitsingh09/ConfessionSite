@@ -1,0 +1,9 @@
+.report {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+
+}
+.report:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}

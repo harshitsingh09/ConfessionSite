@@ -7,6 +7,7 @@ import { reportDbIn } from "../../firebaseConfig";
 import { addDoc } from "firebase/firestore";
 import { styled } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
+import "./noteStyles.css"
 
 const StyledCard = styled(Card)`
   border: 1px solid black;
@@ -25,8 +26,8 @@ const Note = ({ note }) => {
         </Typography>
       </CardContent>
       <CardActions style={{ display: "flex", justifyContent: "flex-end"}}>
-        <div style= {{cursor:"pointer", color:"inherit", backgroundColor:"transparent"}} className="cursor-pointer" onClick={()=>{
-          if(window.confirm("Are u dev?")==true){
+        <div className="report" onClick={()=>{
+          if(window.confirm("Are u dev?")){
             addDoc(reportDbIn, {confessionID:note.id})
           }else{
             console.log("Not Confirmed");
