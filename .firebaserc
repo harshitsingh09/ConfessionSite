@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "confession-site-2023"
-  }
+    "default": "confessionsite-344d8",
+    "confession-site-2023": "confessionsite-344d8"
+  },
+  "targets": {},
+  "etags": {}
 }
