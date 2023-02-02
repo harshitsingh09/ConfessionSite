@@ -25,6 +25,7 @@ const Confessions = () => {
       })
     );
     console.log(notes);
+    console.log();
   };
   return (
     <>
@@ -40,6 +41,7 @@ const Confessions = () => {
           style={gridStyles}
           spacing={3}
         >
+          
           {notes.map((item) => (
             <Grid style={{ wordWrap: "break-word" }} item xs={12} sm={6}>
               <Note note={item} />
